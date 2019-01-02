@@ -1,7 +1,7 @@
 import tensorflow as tf
 import pickle
 
-path = 'c:/users/jim/tensorflowtrials'
+path = 'path'
 parameter_list = pickle.load(open('cnn99.3%RQ.p'.format(path), 'rb'))
 
 inputs = tf.placeholder(tf.float32, [28, 28])

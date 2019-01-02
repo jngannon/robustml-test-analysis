@@ -1,7 +1,7 @@
 import tensorflow as tf
 import pickle
 
-path = 'c:/users/jim/tensorflowtrials'
+path = 'path'
 parameter_list = pickle.load(open('ANN_Softmax-CE.p'.format(path), 'rb'))
 
 inputs = tf.placeholder(tf.float32, [28, 28])
