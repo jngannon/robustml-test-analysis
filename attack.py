@@ -4,7 +4,7 @@ import tensorflow as tf
 import numpy as np
 
 class PGDAttack(robustml.attack.Attack):
-    def __init__(self, sess, model, epsilon, max_steps=100, learning_rate=0.001, debug=False):
+    def __init__(self, sess, model, epsilon, max_steps=100, learning_rate=0.01, debug=False):
         self._sess = sess
         self._model = model
         self._epsilon = epsilon
